@@ -1,0 +1,284 @@
+.wrapper{
+    width: 600px;
+    margin: 0 auto;
+    color: #000000;
+}
+#header{
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    margin: 1rem 0 0;
+}
+h1{
+	    color: #3734ff;
+}
+/*カレンダー*/
+#calendar {
+    text-align: center;
+    width: 100%;
+}
+table {
+    /*outline: 2px solid #bd2db0;*/
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    color: #000;
+}
+th, td {
+    /*outline: 1px solid #bd2db0;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 1em;
+    padding: 5px;
+}
+table th{
+	outline: 1px solid #bd2db0;
+}
+/*日曜日*/
+td:first-child {
+    color: red;
+}
+/*土曜日*/
+td:last-child {
+    color: blue;
+}
+/*前後月の日付*/
+td.disabled {
+    color: #ccc;
+}
+td{
+	position: relative;
+}
+tr td .coment{
+	width:120px;
+	min-height:50px;
+	position: absolute;
+	background:#8affd6;
+	border-radius: 1em;
+	top:-55px;
+	left:40px;
+	color:#060708;
+	display:none;
+	text-align: left;
+	padding-left:5px;
+    z-index: 1;
+
+}
+td:hover .coment{
+	display:block;
+}
+/*ボタン*/
+#next-prev-button {
+    position: relative;
+        height: 40px;
+}
+#next-prev-button button{
+    cursor: pointer;
+    background: #bb1f8b;
+    color: #23c36a;
+    border: 1px solid #bb1f8b;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+}
+#next-prev-button button:hover{
+    background-color: #d72a9f;
+    border-color: #d72a9f;
+}
+#prev {
+    float: left;
+}
+#next {
+    float: right;
+}
+
+#foodter{
+	width:600px;
+	margin:30px auto;
+}
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+   appearance: none;
+   outline: 0;
+   box-shadow: none;
+   border: 0 !important;
+   background: #48132e;
+   background-image: none;
+ }
+.select {
+   display: flex;
+   width: 200px;
+   height: 2em;
+   line-height: 3;
+   background: #2bd9d9;
+   overflow: hidden;
+   border-radius: .25em;
+   float:left;
+
+ }
+ #foodter #lef{
+ 	margin-right:200px;
+ }
+
+ select {
+   flex: 1;
+   padding: 0 .5em;
+   color: #f9e6f0;
+   cursor: pointer;
+ }
+ /* thiết kế dấu mũi tên*/
+ .select::after {
+
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 0 1em;
+   background: DodgerBlue;
+   cursor: pointer;
+   pointer-events: none;
+   -webkit-transition: .25s all ease;
+   -o-transition: .25s all ease;
+   transition: .25s all ease;
+   color: white;
+ }
+ /* Hiệu ứng hover */
+ .select:hover::after {
+   color: Gainsboro;
+ }
+.datachange{
+	width:150px;
+	float:none;
+	height:40px;
+	margin:50px auto;
+	background:#4ab794;
+	text-align:center;
+	 border-radius: 25em;
+	 overflow: hidden;
+}
+#ca{
+	 position:relative;
+	top:-80px;
+
+}
+.datachange a:hover,.delete a:hover{
+	background: #73e7c2;
+	color: #ffff;
+}
+.datachange a,.delete a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#ececec;
+	text-decoration: none;
+	font-weight: bold;
+	padding-top:10px;
+}
+
+a:visited{
+color: #ececec;
+}
+
+/* phan delete data*/
+.delete{
+	width:100px;
+	float:none;
+	height:40px;
+	background: #4ab794;
+    color: #fff;
+    border: 1px solid #4ab794;
+    border-radius: 4px;
+    margin:0 auto;
+    overflow: hidden;
+}
+#form{
+	width:600px;
+	margin:30px auto;
+}
+
+#form .select {
+   width: 150px;
+   height: 2em;
+   float:left;
+
+ }
+ /* #form .select input{
+    width: 200px;
+ 
+  } */
+ #form #types {
+    display: flex;
+    width: 300px;
+    height: 2em;
+    line-height: 3;
+    background: #2bd9d9;
+    overflow: hidden;
+    border-radius: .25em;
+    float:left;
+    margin-left:45px;
+ 
+  }
+#coment{
+    margin-top: 68px;
+	margin-left:0;
+	width:300px;
+}
+#select{
+height:50px;
+width:100%;
+float:none;
+margin-bottom:20px;
+}
+#form #sub{
+	width:150px;
+	float:right;
+	height:40px;
+	margin-top:-40px;
+	background:#4ab794;
+	text-align:center;
+	 border-radius: .25em;
+	 overflow: hidden;
+}
+input{
+	height:40px;
+	width:300px;
+	font-size: x-large;
+}
+.syukin{
+	background:#97e197;
+	color: #fff;
+}
+.set{
+	background:#D65E72;
+	color: #fff;
+}
+.today{
+	background:#80ffff;
+	color: #fff;
+}
+#setumei div{
+	margin-left:10px;
+	padding-left:5px;
+	width:120px;
+	float:left;
+
+}
+#error{
+	color:red;
+}
+#haha{
+	position:relative;
+	top:-80px;
+}
+h4{
+    /* background-color: rgb(231, 255, 92); */
+	text-align: center;
+	border-bottom: solid 1px black;
+	font-size: x-small;
+	margin:0;
+	padding:0;
+}
